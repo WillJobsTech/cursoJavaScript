@@ -1,0 +1,34 @@
+<!DOCTYPE html>         <!--Tipo do documento-->
+<html lang="pt-br">     <!--Língua do documento-->
+<head>
+    <meta charset="UTF-8">      <!--Usa alfabeto com acentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">       <!--Compatibilidade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de SOMAR!</title>   <!--Título que mostra na aba principal da janela-->
+    
+    <style>                                     /* Essa parte do arquivo é escrito em CSS  */
+        body {
+            background-color: blueviolet;
+            color: white;
+            font: normal 20pt Arial;           /*Entre as TAGS <style> estão as configurações do CSS*/
+        }
+        h1 {
+            color: rgb(241, 207, 56);
+        }                                     /* Essa parte do arquivo é escrito em CSS */
+    </style>
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>RESULTADO:</p>
+    
+    <script>                                           
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        document.write(`<h2> "A soma de ${n1} + ${n2} = ${s}"<h2/> <br/>`)
+        document.write('Pressione "F5" no teclado <br/> para fazer um novo cálculo...')
+    </script> 
+    
+</body>
+</html>
